@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header> 
+        <a href="index.html" class="btn" style="position:fixed; bottom:20px; right:20px;"> 
+            < Go Back
+        </a>         
+        <img src="assets/logo.png">   <br>
+        <h1> Upload Your Video </h1>            
+    </header>
+
+    <div class="container">
+        <form action="https://formspree.io/f/xeqvorvp" method="POST">
+        <!-- @TODO: Put your code here -->
+
+                <lable for="txt-title">Title of Video</lable> <br> 
+                <input type="text" placeholder="Title of video" id="txt-username" name="username" required> <br>
+            
+                <label for ="description">Description</label> <br>
+                <textarea id="textarea-description" name="description" rows="4" cols="50" placeholder="Describe the video here" required></textarea> <br>
+            
+                <label for ="date">Date To Publish</label> <br>
+                <input type="date" id="date-publish" name="date" required> <br>
+            
+                <label for ="file">Video Thumbnail</label> <br>
+                <input type="file" id="file-upload" name="file"> <br>
+
+            <button class="btn btn-secondary">Submit</button>
+        </form>        
+    </div>
+</body>
+</html>
